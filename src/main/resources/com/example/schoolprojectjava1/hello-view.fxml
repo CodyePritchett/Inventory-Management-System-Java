@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="877.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolprojectjava1.HelloController">
+   <children>
+      <Pane layoutX="79.0" layoutY="123.0" prefHeight="279.0" prefWidth="426.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="123.0">
+         <children>
+            <TableView fx:id="partTableView" layoutX="14.0" layoutY="56.0" prefHeight="175.0" prefWidth="390.0">
+              <columns>
+                <TableColumn fx:id="PTid" prefWidth="97.0" text="Part ID" />
+                <TableColumn fx:id="PTname" prefWidth="97.0" text="Part Name" />
+                  <TableColumn fx:id="PTinventoryLevel" prefWidth="97.0" text="Inventory Level" />
+                  <TableColumn fx:id="PTprice" prefWidth="97.0" text="Price" />
+              </columns>
+            </TableView>
+            <Button fx:id="deletePartButton" layoutX="352.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleDeletePartAction" text="Delete" />
+            <Button fx:id="PTMOD" layoutX="292.0" layoutY="240.0" mnemonicParsing="false" onAction="#openModifyPartScreen" text="Modify" />
+            <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parts" wrappingWidth="31.8828125" />
+            <Button fx:id="PTADD" layoutX="246.0" layoutY="240.0" mnemonicParsing="false" onAction="#openAddPartScreen" text="Add" />
+            <TextField fx:id="partSearchField" layoutX="255.0" layoutY="16.0" />
+            <Button fx:id="partSearchButton" layoutX="183.0" layoutY="16.0" mnemonicParsing="false" onAction="#handlePartSearch" text="Search" />
+            <Button fx:id="exitButton" layoutX="750.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleExitAction" text="Exit" />
+         </children>
+      </Pane>
+      <Text layoutX="50.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory Mangement System" AnchorPane.leftAnchor="30.0" />
+      <Pane layoutX="456.0" layoutY="123.0" prefHeight="279.0" prefWidth="426.0">
+         <children>
+            <TableView fx:id="productTableView" layoutX="14.0" layoutY="56.0" prefHeight="175.0" prefWidth="390.0">
+               <columns>
+                  <TableColumn fx:id="PDid" prefWidth="97.0" text="Product ID" />
+                  <TableColumn fx:id="PDname" prefWidth="97.0" text="Product Name" />
+                  <TableColumn fx:id="PDinventoryLevel" prefWidth="97.0" text="Inventory Level" />
+                  <TableColumn fx:id="PDprice" prefWidth="97.0" text="Price" />
+               </columns>
+            </TableView>
+            <Button fx:id="PDDEL" layoutX="352.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleDeleteProductAction" text="Delete" />
+            <Button fx:id="PDMOD" layoutX="292.0" layoutY="240.0" mnemonicParsing="false" onAction="#openModifyProductScreen" text="Modify" />
+            <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Products" wrappingWidth="50.212890625" />
+            <Button fx:id="PDADD" layoutX="246.0" layoutY="240.0" mnemonicParsing="false" onAction="#openAddProductsScreen" text="Add" />
+            <TextField fx:id="productSearchField" layoutX="244.0" layoutY="17.0" />
+            <Button fx:id="productSearchButton" layoutX="178.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleProductSearch" text="Search" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

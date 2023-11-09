@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="442.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolprojectjava1.ModifyPartController">
+    <children>
+        <Text layoutX="38.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modify Part" />
+        <RadioButton fx:id="outsourcedRadioButton" layoutX="211.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleRadioButtonSelection" selected="true" text="Outsourced">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup></RadioButton>
+        <RadioButton fx:id="inHouseRadioButton" layoutX="117.0" layoutY="43.0" mnemonicParsing="false" onAction="#handleRadioButtonSelection" prefHeight="17.0" prefWidth="75.0" text="In-House" toggleGroup="$toggleGroup" />
+        <Text layoutX="62.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="90.0" />
+        <Text layoutX="58.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="132.0" />
+        <Text layoutX="60.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inv" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="174.0" />
+        <Text layoutX="59.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" AnchorPane.leftAnchor="59.0" AnchorPane.topAnchor="216.0" />
+        <Text layoutX="60.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="258.0" />
+        <Text fx:id="machineIdLabel" layoutX="60.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Company Name" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="300.0" />
+        <Button fx:id="savePart" layoutX="282.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleSaveAction" text="Save" />
+        <Button fx:id="CLMODPT" layoutX="348.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleCancelAction" text="Cancel" />
+        <TextField fx:id="idTextField" disable="true" layoutX="192.0" layoutY="86.0" promptText="Auto Gen - Disabled" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="86.0" />
+        <TextField fx:id="nameTextField" layoutX="192.0" layoutY="128.0" promptText="Part Name" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="128.0" />
+        <TextField fx:id="invTextField" layoutX="192.0" layoutY="170.0" promptText="Inv" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="170.0" />
+        <TextField fx:id="priceTextField" layoutX="192.0" layoutY="212.0" promptText="Price/Cost" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="212.0" />
+        <TextField fx:id="maxTextField" layoutX="192.0" layoutY="254.0" prefHeight="25.0" prefWidth="75.0" promptText="Max" AnchorPane.leftAnchor="192.0" AnchorPane.topAnchor="254.0" />
+        <Text layoutX="292.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min" />
+        <TextField fx:id="minTextField" layoutX="323.0" layoutY="253.0" prefHeight="25.0" prefWidth="75.0" promptText="Min" AnchorPane.leftAnchor="323.0" AnchorPane.topAnchor="254.0" />
+        <TextField fx:id="companyNameTextField" layoutX="193.0" layoutY="296.0" prefHeight="25.0" prefWidth="101.0" promptText="Comp Nm" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="296.0" />
+      <TextField fx:id="machineIdTextField" layoutX="203.0" layoutY="306.0" prefHeight="25.0" prefWidth="101.0" promptText="Mach ID" visible="false" AnchorPane.leftAnchor="193.0" AnchorPane.topAnchor="296.0" />
+    </children>
+</AnchorPane>
